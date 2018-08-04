@@ -26,7 +26,6 @@ runTimer = (n) => {
 }
 
 
-// var timeleft = 10;
 // var downloadTimer = setInterval(function(){
 //   console.log(timeleft + "...")
 //   timeleft-=1
