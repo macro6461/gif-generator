@@ -1,4 +1,4 @@
-
+var mykey = config.MY_KEY;
 
 runTimer = (n) => {
   event.preventDefault()
