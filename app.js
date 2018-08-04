@@ -1,6 +1,6 @@
-import config;
-
 var mykey = config.MY_KEY;
+
+debugger
 
 runTimer = (n) => {
   event.preventDefault()
