@@ -1,3 +1,5 @@
+import config;
+
 var mykey = config.MY_KEY;
 
 runTimer = (n) => {
