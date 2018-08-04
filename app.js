@@ -15,7 +15,7 @@ runTimer = (n) => {
       document.getElementById("button").style.display = "block"
       document.getElementById("target").style.display = "none"
       clearInterval(downloadTimer);
-      var xhr = $.get(`http://api.giphy.com/v1/gifs/random?api_key=${key}&tag=${n.value}&limit=1`);
+      var xhr = $.get(`http://api.giphy.com/v1/gifs/random?api_key=${mykey}&tag=${n.value}&limit=1`);
       xhr.done(function(data) {
         document.getElementById("belly").src = data.data.images.original.url
       });
