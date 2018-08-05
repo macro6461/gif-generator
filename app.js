@@ -42,7 +42,7 @@ runTimer = (n) => {
       document.getElementById("button").style.display = "block"
       document.getElementById("target").style.display = "none"
       clearInterval(downloadTimer);
-      var xhr = $.get(`https://api.giphy.com/v1/gifs/random?api_key=${mykey}&tag=${n.value}&limit=1`);
+      var xhr = $.get(`https://api.giphy.com/v1/gifs/random?api_key=${mykey}&tag=${n.value.toLowerCase()}&limit=1`);
       xhr.done(function(data) {
         document.getElementById("belly").src = data.data.images.original.url
       });
