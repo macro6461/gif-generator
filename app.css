@@ -172,6 +172,10 @@ input:-webkit-autofill {
 }
 
 @media only screen and (max-width: 500px){
+  #button{
+    background-color: #5F9EA0;
+    border-radius: 5px;
+  }
   #parent{
     width: 400px;
   }
@@ -284,10 +288,8 @@ input:-webkit-autofill {
     bottom: -110px;
     z-index: -100;
   }
-}
-
-@-safari-document url-prefix() {
-  a img {
-    margin:5px;
+  #button{
+    background-color: #5F9EA0;
+    border-radius: 5px;
   }
 }
