@@ -36,8 +36,16 @@ h1{
 #flame-container{
   transform: rotate(220deg);
   position: absolute;
-  right: 54px;
-  bottom: -108px;
+  right: 75px;
+  bottom: -105px;
+  z-index: -100;
+}
+
+#flame-container.safari{
+  transform: rotate(220deg);
+  position: absolute;
+  right: 120px !important;
+  bottom: -105px;
   z-index: -100;
 }
 
@@ -131,7 +139,7 @@ input:-webkit-autofill {
 }
 
 #parent{
-  position: relative; width: 350px; display: block; margin: auto;
+  position: relative; width: 400px; display: block; margin: auto;
 }
 
 #query-form{
@@ -275,5 +283,11 @@ input:-webkit-autofill {
     right: 90px;
     bottom: -110px;
     z-index: -100;
+  }
+}
+
+@-safari-document url-prefix() {
+  a img {
+    margin:5px;
   }
 }
