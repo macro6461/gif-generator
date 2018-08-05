@@ -1,7 +1,6 @@
 var mykey = config.MY_KEY;
 
 runTimer = (n) => {
-  debugger
   event.preventDefault()
   var timeleft = 3;
   var downloadTimer = setInterval(function(){
